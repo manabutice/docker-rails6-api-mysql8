@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
-  database: rails6_api_mysql8_production
+  database: db/production.sqlite3
+  # database: rails6_api_mysql8_production
   username: rails6_api_mysql8
   password: <%= ENV['RAILS6_API_MYSQL8_DATABASE_PASSWORD'] %>
